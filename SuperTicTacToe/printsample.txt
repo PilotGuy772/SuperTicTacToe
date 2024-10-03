@@ -1,0 +1,34 @@
+            ,             ,
+   |   |    |  X | X | X  |  X | X | X
+   |   |    |  X | X | X  |  X | X | X
+   |   |    |  X | X | X  |  X | X | X
+------------|-------------|------------
+ X | X | X  |  X | X | X  |  X | X | X
+ X | X | X  |  X | X | X  |  X | X | X
+ X | X | X  |  X | X | X  |  X | X | X
+------------|-------------|------------
+ X | X | X  |  X | X | X  |  X | X | X
+ X | X | X  |  X | X | X  |  X | X | X
+ X | X | X  |  X | X | X  |  X | X | X
+            '             '
+
+
+
+Super Tic Tac Toe Minimax Algo
+
+The minimax algorithm will determine the worst possible board
+state that the AI can end up in regardless of what the player
+chooses to do.
+
+This will mean using a recursive algorithm to perform a tree
+search of the game space. The super tic-tac-toe game space is
+too big to search all possible game states, so we need a 
+heuristics algorithm to score board states.
+
+
+Victory - 100 points
+Line of two boards - 50 points
+Line of two cells - 20 points
+Two boards sep. by space - 50 points
+Two cells sep. by space - 20 points
+

@@ -1,9 +1,12 @@
 ﻿namespace SuperTicTacToe;
 
-class Program
+internal static class Program
 {
-    static void Main(string[] args)
+    private static int Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
+        Board board = new();
+        board.PrintBoard();
+        return 0;
     }
 }
