@@ -18,12 +18,25 @@ Super Tic Tac Toe Minimax Algo
 
 The minimax algorithm will determine the worst possible board
 state that the AI can end up in regardless of what the player
-chooses to do.
+chooses to do. 
 
 This will mean using a recursive algorithm to perform a tree
 search of the game space. The super tic-tac-toe game space is
 too big to search all possible game states, so we need a 
 heuristics algorithm to score board states.
+
+At each turn, the minimax algorithm will iterate through all
+possible next moves for the current turn and will call the
+minimax method on that version of the board. If it determines
+the board to be in a victory state for either player, it
+immediately returns 100 or -100.
+
+If it reaches the stop condition, it evaluates the state of
+the board, curves the score, and returns that. When minimax
+receives a returned score from one of its child nodes, it 
+chooses the lowest score of its set of children to return 
+as its own score. This way, each node on the tree will
+represent the worst possible outcome of the game for the AI.
 
 
 Victory - 100 points
